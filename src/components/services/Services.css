@@ -1,0 +1,52 @@
+.services {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #c1bdbd;
+  border-radius: 10px;
+  width: 23%;
+  font-size: 21px;
+  background: #d3959b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #bfe6ba,
+    #d3959b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #bfe6ba,
+    #d3959b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.service-item i {
+  font-size: 40px;
+}
+
+/* !Media Q */
+@media (max-width: 768px) {
+  .services {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  .service-item {
+    width: 48%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-item {
+    width: 98%;
+  }
+}

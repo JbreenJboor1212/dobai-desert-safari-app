@@ -1,0 +1,130 @@
+.tours-list {
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tour-item {
+  width: 28%;
+  margin: 25px 10px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.tour-item-img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+.tour-item-label {
+  position: absolute;
+  opacity: 0;
+  width: 102%;
+  top: 105px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 5px;
+  font-size: 27px;
+  z-index: 3;
+  background-color: rgba(28, 27, 27, 0.582);
+  color: orangered;
+  padding: 6px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+.tour-item:hover .tour-item-label {
+  opacity: 1;
+}
+
+.tour-item:hover .tour-item-img {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.tour-item-body {
+  padding: 15px 10px;
+  color: var(--primary-color);
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tour-item-title {
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.tour-item-duration {
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.tour-item-price {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 100%;
+  color: gray;
+}
+
+.tour-item-price strong {
+  color: var(--orange-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tour-item-link {
+  width: 98%;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+  background-color: var(--orange-color);
+  color: white;
+  cursor: pointer;
+  font-size: 21px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* !Media Q */
+@media (max-width: 1162px) {
+  .tour-item {
+    width: 44%;
+  }
+}
+
+@media (max-width: 780px) {
+  .tour-item {
+    width: 100%;
+  }
+
+  .rating i {
+    margin-right: 2px;
+  }
+}

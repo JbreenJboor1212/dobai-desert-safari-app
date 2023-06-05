@@ -1,0 +1,57 @@
+.sort-input-container {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 21px;
+}
+
+.available-tours {
+  font-size: 21px;
+  color: gray;
+}
+
+.available-tours i {
+  color: orangered;
+  font-size: 23px;
+}
+
+.select {
+  border: none;
+  padding: 10px 17px;
+  border-radius: 7px;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.select .option {
+  padding: 10px;
+}
+
+/* ! Media Q */
+@media (max-width: 580px) {
+  .sort-input-container {
+    padding: 0 10px;
+  }
+
+  .select {
+    padding: 6px 12px;
+    font-size: 17px;
+  }
+
+  .available-tours {
+    font-size: 17px;
+  }
+
+  .select .option {
+    padding: 4px;
+  }
+
+  .available-tours i {
+    font-size: 17px;
+  }
+}

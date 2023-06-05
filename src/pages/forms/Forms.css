@@ -1,0 +1,95 @@
+/* !login */
+.form-wrapper {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 340px;
+  padding: 40px 30px;
+  position: relative;
+  z-index: 5;
+  height: 500px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form .one {
+  position: absolute;
+  top: 0%;
+  width: 340px;
+  left: 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.form .two {
+  position: absolute;
+  width: 340px;
+  bottom: 0;
+  left: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.form input {
+  border: none;
+  padding: 10px;
+  font-size: 21px;
+  margin-bottom: 15px;
+  z-index: 5;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form input:focus {
+  outline: none;
+  border-bottom: 2.4px solid #3498db;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+input:hover {
+  outline: 1px solid lightgrey;
+}
+
+.form .btn {
+  width: 100%;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+  font-weight: 700;
+  font-size: 21px;
+  margin-top: 17px;
+  z-index: 5;
+  border: none;
+  outline: none;
+  line-height: 1.15;
+  border-radius: 10px;
+}
+
+.paragraph {
+  margin-top: 7px;
+  font-size: 17px;
+  font-weight: 500;
+  color: gray;
+}
+
+.paragraph .link {
+  color: #222;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+}
